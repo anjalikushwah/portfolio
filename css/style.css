@@ -125,6 +125,10 @@ h3 {
 	z-index: 5;
 }
 
+.margin-contact-bottom {
+margin-bottom: 25vh;
+}
+
 /* Page Loader */
 .js .loading::before {
 	content: '';
