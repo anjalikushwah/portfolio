@@ -126,7 +126,7 @@ h3 {
 }
 
 .margin-contact-bottom {
-margin-bottom: 25vh;
+margin-bottom: 15rem;
 }
 
 /* Page Loader */
@@ -313,10 +313,6 @@ margin-bottom: 25vh;
 	.content__text {
 		bottom: 10vmax;
 		padding-left: 2rem;
-	}
-
-	html, body {
-		font-size: 13px;
 	}
 }
 
