@@ -9,7 +9,7 @@
 	--color-main-text: silver;
 	--color-scroll-text: #fff;
 	--font-scroll-text: 'Josefin Sans', monospace;
-	--fontsize-scroll-text: 12vw;
+	--fontsize-scroll-text: 11.5vw;
 	transition: background-color 0.4s;
 }
 
