@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+html, body {
+    font-size: 14px;
+}
+
+body {
+	--font-scroll-text: 'Josefin Sans', monospace;
+	min-height: 100vh;
+	color: #57585c;
+	color: var(--color-text);
+	background-color: #fff;
+	background: var(--color-bg);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: .05rem;
+	font-size: 1.125rem;
+}
+
+a {
+	text-decoration: none;
+	color: #ff4d30;
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover,
+a:focus {
+	outline: none;
+	color: #ff4d30;
+    text-decoration: underline;
+    transition: 5s ease;
+}
+
+button:focus {
+	outline: none;
+}
+
+
+h1, h2, h3 {
+    color: #ffffff;
+    line-height: 100%;
+}
+
+h1 {
+    font-size: 14rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+/* Navigation Start */
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 3rem;
+    font-weight: 700;
+}
+
+.designation {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+}
+
+.footer-left {
+    position: fixed;
+    bottom: 2rem;
+    left: 3rem;
+}
+
+.footer-right {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    font-weight: 700;
+}
+
+/* Page Loader */
+.js .loading::before {
+	content: '';
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 100000;
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	pointer-events: none;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* Header */
+
+.content {
+	position: relative;
+	display: block;
+}
+
+.content__section {
+	position: relative;
+	text-align: left;
+	padding: 0 0;
+}
+
+.content__section:first-child {
+	margin: 0 0 30vh;
+}
+
+.content__section:last-child {
+	margin: 30vh 0 0;
+}
+
+.content__section:first-child,
+.content__section:last-child {
+	height: calc(100vh - 9.875em);
+	text-align: left;
+}
+
+.content__link {
+	display: block;
+	position: relative;
+	max-width: 100%;
+	margin: 0 0 0 auto;
+}
+
+.content__link--nobottom {
+	margin-bottom: 10vh;
+}
+
+.content__img {
+	position: relative;
+	display: block;
+	margin: 0 0 0 auto;
+	width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.content__text {
+	color: var(--color-scroll-text);
+	font-size: var(--fontsize-scroll-text);
+	font-family: var(--font-scroll-text);
+	margin: 0;
+	line-height: 1;
+	text-transform: lowercase;
+	font-weight: normal;
+	position: absolute;
+	bottom: 6vmax;
+	left: 0;
+	padding-left: 2vmax;
+	z-index: 1000;
+	line-height: 0.8;
+}
+
+.content__contact {
+	position: absolute;
+	bottom: calc(var(--fontsize-scroll-text) * 1.5 - 10vmax);
+	font-size: 	3rem;
+	font-family: var(--font-scroll-text);
+	padding: 15vw;
+    left: 0;
+}
+
+.content__contact span {
+	font-weight: 700 !important;
+	color: #fff;
+}
+
+.js .ioapi .content__text {
+	position: fixed;
+	opacity: 0;
+	white-space: pre;
+}
+
+.content__text span {
+	display: inline-block;
+}
+
+.content__contact a:last-child {
+	display: block;
+}
+
+@media screen and (max-width: 50em) {
+	.content__text,
+	.js.ioapi .content__text {
+		bottom: 5rem;
+	}
+	.content__contact {
+		bottom: calc(var(--fontsize-scroll-text) * 1.5 - 10vh);
+	}
+
+	.content__contact {
+		font-size: 	2rem;
+	}
+}
+
+
+/* Media Queries Start */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+ }
+/* Media Queries Start */
