@@ -108,6 +108,7 @@ h3 {
     top: 2rem;
 	right: 3rem;
 	z-index: 5;
+	font-weight: 100;
 }
 
 .footer-left {
@@ -115,6 +116,7 @@ h3 {
     bottom: 2rem;
 	left: 3rem;
 	z-index: 5;
+	font-weight: 100;
 }
 
 .footer-right {
