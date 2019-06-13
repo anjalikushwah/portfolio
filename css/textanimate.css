@@ -21,12 +21,12 @@
 	min-height: 100vh;
 }
 
-.content__contact {
+.content__inner {
 	color: var(--color-main-text);
 	padding: 0 15vw;
 }
 
-.content__contact span {
+.content__inner span {
     font-weight: 500;
     color: #ffffff;
 }
@@ -36,8 +36,4 @@
 
 .content__text {
 	font-weight: 700;
-}
-
-@media screen and (max-width: 50em) {
-
 }

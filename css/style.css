@@ -241,7 +241,7 @@ margin-bottom: 15rem;
 	line-height: 0.8;
 }
 
-.content__contact {
+.content__inner {
 	position: absolute;
 	bottom: calc(var(--fontsize-scroll-text) * 1.5 - 10vmax);
 	font-size: 	2.5rem;
@@ -250,20 +250,20 @@ margin-bottom: 15rem;
 	left: 0;
 }
 
-.content__contact a {
+.content__inner a {
 	text-decoration: none;
 	color: #ffffff;
 	outline: none;
 	cursor: pointer;
 }
 
-.content__contact a:hover, a:focus {
+.content__inner a:hover, a:focus {
 	outline: none;
     text-decoration: underline;
 	transition: 5s ease;
 }
 
-.content__contact span {
+.content__inner span {
 	font-weight: 700 !important;
 	color: #fff;
 }
@@ -278,20 +278,21 @@ margin-bottom: 15rem;
 	display: inline-block;
 }
 
-.content__contact a:last-child {
+.content__inner a:last-child {
 	display: block;
 }
 
+/* Media Queries Start */
 @media screen and (max-width: 50em) {
 	.content__text,
 	.js.ioapi .content__text {
 		bottom: 5rem;
 	}
-	.content__contact {
+	.content__inner {
 		bottom: calc(var(--fontsize-scroll-text) * 1.5 - 10vh);
 	}
 
-	.content__contact {
+	.content__inner {
 		font-size: 	1.8rem;
 	}
 
@@ -324,23 +325,4 @@ margin-bottom: 15rem;
 		padding: 12vw;
 	}
 }
-
-
-/* Media Queries Start */
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-
-}
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-
-}
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
-
-}
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-
- }
-/* Media Queries Start */
+/* Media Queries End */
