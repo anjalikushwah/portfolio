@@ -81,19 +81,19 @@ h1, h2, h3 {
 
 h1 {
     font-size: 14rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
 }
 
 h2 {
     font-size: 8rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
 }
 
 h3 {
     font-size: 5rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* Navigation Start */
@@ -323,6 +323,10 @@ margin-bottom: 15rem;
 
 	.padding-technology {
 		padding: 12vw;
+	}
+
+	body {
+		font-size: 1rem;
 	}
 }
 /* Media Queries End */
