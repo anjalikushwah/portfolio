@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -35,6 +35,12 @@
 
         <!-- Title -->
         <title>Anjali Kushwah | UI UX Designer</title>
+        
+        <!--Overlay Script-->
+        <script src="js/modernizr.custom.js"></script>
+        
+        <!--Animate Number Script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     </head>
 
@@ -137,7 +143,32 @@
         
         <!-- Navigation -->
         <div class="logo"><a href="index.html">Jane Doe</a></div>
-        <div class="designation"><a href="index.html">UI UX Designer</a></div>
+        <div class="designation"><a id="trigger-overlay">UI UX Designer</a></div>
+
+        <!-- open/close Designation -->
+        <div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li>
+                        <div class="count-items">
+                            <div class="count-item">
+                                <div class="counter-value" data-count="8">0</div>
+                                <p>+ Years </p>
+                            </div>
+                            <div class="count-item">
+                                <div class="counter-value" data-count="100">0</div>
+                                <p>+ Clients </p>
+                            </div>
+                            <div class="count-item">
+                                <div class="counter-value" data-count="200">0</div>
+                                <p>+ Projects </p>
+                            </div>
+                        </div>
+                    </li>
+				</ul>
+			</nav>
+		</div>
 
         <!-- Footer -->
         <div class="footer-left">
@@ -150,9 +181,16 @@
         <script src="js/imagesloaded.pkgd.min.js"></script>
         <script src="js/charming.min.js"></script>
         <script src="js/anime.min.js"></script>
-        <script src="js/demo3.js"></script>
+        <script src="js/textanimation.js"></script>
         <script>
             document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");
         </script>
+        
+        <!-- Overlay JavaScript -->
+        <script src="js/classie.js"></script>
+        <script src="js/overlay.js"></script>
+
+         <!-- Animate Number JavaScript -->
+        <script src="js/number-animate.js"></script>
     </body>
 </html>
