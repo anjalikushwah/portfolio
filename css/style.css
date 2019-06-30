@@ -65,8 +65,8 @@ a:hover,
 a:focus {
 	outline: none;
 	color: #ff4d30;
-    text-decoration: underline;
-    transition: 5s ease;
+	opacity: .8;
+	transition: 5s ease;
 }
 
 button:focus {
@@ -122,8 +122,8 @@ h3 {
 
 .designation a:hover,
 .designation a:focus {
-    text-decoration: underline !important;
-    transition: 5s ease !important;
+	opacity: .8;
+	transition: 5s ease !important;
 }
 
 .footer-left {
