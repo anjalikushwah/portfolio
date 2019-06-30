@@ -407,6 +407,7 @@ margin-bottom: 15rem;
 }
 
 .count-items > div p {
+	font-family: 'Josefin Sans', monospace;
 	font-size: 2rem;
 	text-shadow: none;
 	text-align: center;
@@ -457,7 +458,7 @@ margin-bottom: 15rem;
 	}
 
 	body {
-		font-size: .8rem;
+		font-size: 1rem;
 	}
 
 	.count-items > div .counter-value {
