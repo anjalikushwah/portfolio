@@ -67,6 +67,7 @@ a:focus {
 	color: #ff4d30;
 	opacity: .8;
 	transition: 5s ease;
+	text-decoration: none !important;
 }
 
 button:focus {
