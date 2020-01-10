@@ -103,14 +103,14 @@ h3 {
     top: 2rem;
     left: 3rem;
 	font-weight: 800;
-	z-index: 10;
+	z-index: 100;
 }
 
 .designation {
     position: fixed;
     top: 2rem;
 	right: 3rem;
-	z-index: 10;
+	z-index: 100;
 	font-weight: 300;
 }
 
@@ -131,7 +131,7 @@ h3 {
     position: fixed;
     bottom: 2rem;
 	left: 3rem;
-	z-index: 10;
+	z-index: 100;
 	font-weight: 300;
 }
 
@@ -140,11 +140,13 @@ h3 {
     bottom: 2rem;
     right: 3rem;
 	font-weight: 800;
-	z-index: 10;
+	z-index: 100;
 }
 
 .margin-contact-bottom {
-margin-bottom: 15rem;
+	margin-bottom: 15rem;
+	z-index: 10;
+
 }
 
 /* Page Loader */
@@ -555,7 +557,7 @@ margin-bottom: 15rem;
 	}
 
 	.padding-technology {
-		padding: 12vw;
+		padding: 15vw;
 	}
 
 	body {
